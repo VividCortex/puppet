@@ -13,11 +13,12 @@
 ##
 ##
 
+
 class vividcortex(
-    $apitoken = $params::apitoken,
-    $cdnuri = $params::cdnuri,
-    $apiuri = $params::apiuri,
-    $proxyuri = $params::proxyuri) {
+    $apitoken = $apitoken,
+    $cdnuri = $cdnuri,
+    $apiuri = $apiuri,
+    $proxyuri = $proxyuri) {
 
     include vividcortex::params
     include vividcortex::config

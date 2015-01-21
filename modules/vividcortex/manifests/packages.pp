@@ -2,8 +2,9 @@
 class vividcortex::packages{
 
   package { $params::vc_repo:
-    ensure => present,
-    source => $params::vc_repo_source,
+    ensure   => present,
+    source   => $params::vc_repo_source,
+    provider => rpm
   }
 
   package { $params::vc_packages:
