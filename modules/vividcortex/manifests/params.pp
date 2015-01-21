@@ -8,10 +8,9 @@ class vividcortex::params{
 
   $vc_path  = "/etc/vividcortex/"
 
-  $apitoken = ''
-  $cdnuri = ''
-  $apiuri = ''
-  $proxyuri = ''
-
+  $vc_apitoken = ''
+  $vc_cdnuri = ''
+  $vc_apiuri = ''
+  $vc_proxyuri = ''
 }
 

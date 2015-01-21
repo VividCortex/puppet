@@ -15,14 +15,15 @@
 
 
 class vividcortex(
-    $apitoken = $apitoken,
-    $cdnuri = $cdnuri,
-    $apiuri = $apiuri,
-    $proxyuri = $proxyuri) {
+  $apitoken = $vc_apitoken,
+  $cdnuri = $vc_cdnuri,
+  $apiuri = $vc_apiuri,
+  $proxyuri = $vc_proxyuri
+  ) inherits vividcortex::params {
 
     include vividcortex::params
-    include vividcortex::config
     include vividcortex::packages
+    include vividcortex::config
     include vividcortex::services
 
 }
