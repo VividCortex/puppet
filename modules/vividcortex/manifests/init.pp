@@ -2,7 +2,7 @@ class vividcortex($apitoken, $cdnuri = '', $apiuri = '', $proxyuri = '') {
 
     package { 'vividcortex-release':
         ensure => present,
-        source => 'https://repo.vividcortex.com/repo/centos/6/x86_64/vividcortex-release-1-1.el6.noarch.rpm',
+        source => 'https://repo.vividcortex.com/repo/centos/6/x86_64/vividcortex-release-1-1.amzn1.noarch.rpm',
         provider => rpm,
     }
     package { 'vividcortex-agents':
