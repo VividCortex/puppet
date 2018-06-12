@@ -1,13 +1,9 @@
 class vividcortex($apitoken, $cdnuri = '', $apiuri = '', $proxyuri = '') {
 
-    package { 'vividcortex-release':
-        ensure => present,
-        source => 'https://repo.vividcortex.com/repo/centos/6/x86_64/vividcortex-release-1-1.amzn1.noarch.rpm',
-        provider => rpm,
-    }
     package { 'vividcortex-agents':
-        ensure => latest,
-        require => Package["vividcortex-release"],
+        provider => 'rpm',
+        ensure => installed,
+        source => 'https://static-download.vividcortex.com/linux/rpms/vividcortex-agents-1.7-815.amzn1.x86_64.rpm',
     }
     file { 'vividcortex-dir':
         path => '/etc/vividcortex/',
@@ -22,6 +18,9 @@ class vividcortex($apitoken, $cdnuri = '', $apiuri = '', $proxyuri = '') {
         group => 'root',
         mode => '0600',
         content => template('vividcortex/global.conf.erb'),
+    }
+    service { 'vividcortex':
+        ensure => 'running',    
     }
 
 }
