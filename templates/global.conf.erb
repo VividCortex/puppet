@@ -27,7 +27,22 @@
 <% if @skip_certs -%>
   ,"skip-certs": "<%= @skip_certs -%>"
 <% end -%>
+<% if @use_drv_cstar -%>
+  ,"use-drv-cstar": "<%= @use_drv_cstar -%>"
+<% end -%>
 <% if @use_drv_manual -%>
   ,"use-drv-manual": "<%= @use_drv_manual -%>"
+<% end -%>
+<% if @use_drv_mongo -%>
+  ,"use-drv-mongo": "<%= @use_drv_mongo -%>"
+<% end -%>
+<% if @use_drv_mysql -%>
+  ,"use-drv-mysql": "<%= @use_drv_mysql -%>"
+<% end -%>
+<% if @use_drv_pgsql -%>
+  ,"use-drv-pgsql": "<%= @use_drv_pgsql -%>"
+<% end -%>
+<% if @use_drv_redis -%>
+  ,"use-drv-redis": "<%= @use_drv_redis -%>"
 <% end -%>
 }

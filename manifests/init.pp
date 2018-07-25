@@ -9,7 +9,12 @@ class vividcortex(
   Optional[String] $proxyuri                                    = undef,
   Optional[String] $security_gateway                            = undef,
   Variant[Enum['true','false'],Boolean, Undef] $skip_certs      = undef,
+  Variant[Enum['true','false'],Boolean, Undef] $use_drv_cstar   = undef,
   Variant[Enum['true','false'],Boolean, Undef] $use_drv_manual  = undef,
+  Variant[Enum['true','false'],Boolean, Undef] $use_drv_mongo   = undef,
+  Variant[Enum['true','false'],Boolean, Undef] $use_drv_mysql   = undef,
+  Variant[Enum['true','false'],Boolean, Undef] $use_drv_pgsql   = undef,
+  Variant[Enum['true','false'],Boolean, Undef] $use_drv_redis   = undef,
 ) {
 
   package { 'vividcortex-agents':
