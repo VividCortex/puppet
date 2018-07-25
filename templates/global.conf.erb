@@ -1,0 +1,48 @@
+{
+  "api-token": "<%= @apitoken -%>"
+<% if @apiuri -%>
+  ,"api-uri": "<%= @apiuri -%>"
+<% end -%>
+<% if @cdnuri -%>
+  ,"cdn-uri": "<%= @cdnuri -%>"
+<% end -%>
+<% if @drv_manual_host_uri -%>
+  ,"drv-manual-host-uri": "<%= @drv_manual_host_uri -%>"
+<% end -%>
+<% if @drv_mysql_query_capture -%>
+  ,"drv-mysql-query-capture": "<%= @drv_mysql_query_capture -%>"
+<% end -%>
+<% if @drv_pgsql_query_capture -%>
+  ,"drv-pgsql-query-capture": "<%= @drv_pgsql_query_capture -%>"
+<% end -%>
+<% if @host_discovery_limit -%>
+  ,"host-discovery-limit": "<%= @host_discovery_limit -%>"
+<% end -%>
+<% if @proxyuri -%>
+    ,"proxy-uri": "<%= @proxyuri -%>"
+<% end -%>
+<% if @security_gateway -%>
+  ,"security-gateway": "<%= @security_gateway -%>"
+<% end -%>
+<% if not @skip_certs.nil? -%>
+  ,"skip-certs": "<%= @skip_certs -%>"
+<% end -%>
+<% if not @use_drv_cstar.nil? -%>
+  ,"use-drv-cstar": "<%= @use_drv_cstar -%>"
+<% end -%>
+<% if not @use_drv_manual.nil? -%>
+  ,"use-drv-manual": "<%= @use_drv_manual -%>"
+<% end -%>
+<% if not @use_drv_mongo.nil? -%>
+  ,"use-drv-mongo": "<%= @use_drv_mongo -%>"
+<% end -%>
+<% if not @use_drv_mysql.nil? -%>
+  ,"use-drv-mysql": "<%= @use_drv_mysql -%>"
+<% end -%>
+<% if not @use_drv_pgsql.nil? -%>
+  ,"use-drv-pgsql": "<%= @use_drv_pgsql -%>"
+<% end -%>
+<% if not @use_drv_redis.nil? -%>
+  ,"use-drv-redis": "<%= @use_drv_redis -%>"
+<% end -%>
+}
