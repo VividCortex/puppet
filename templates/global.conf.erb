@@ -24,25 +24,25 @@
 <% if @security_gateway -%>
   ,"security-gateway": "<%= @security_gateway -%>"
 <% end -%>
-<% if not @skip_certs.nil? or @skip_certs -%>
+<% if not @skip_certs.nil? -%>
   ,"skip-certs": "<%= @skip_certs -%>"
 <% end -%>
-<% if not @use_drv_cstar.nil? or @use_drv_cstar -%>
+<% if not @use_drv_cstar.nil? -%>
   ,"use-drv-cstar": "<%= @use_drv_cstar -%>"
 <% end -%>
-<% if not @use_drv_manual.nil? or @use_drv_manual -%>
+<% if not @use_drv_manual.nil? -%>
   ,"use-drv-manual": "<%= @use_drv_manual -%>"
 <% end -%>
-<% if not @use_drv_mongo.nil? or @use_drv_mongo -%>
+<% if not @use_drv_mongo.nil? -%>
   ,"use-drv-mongo": "<%= @use_drv_mongo -%>"
 <% end -%>
-<% if not @use_drv_mysql.nil? or @use_drv_mysql -%>
+<% if not @use_drv_mysql.nil? -%>
   ,"use-drv-mysql": "<%= @use_drv_mysql -%>"
 <% end -%>
-<% if not @use_drv_pgsql.nil? or @use_drv_pgsql -%>
+<% if not @use_drv_pgsql.nil? -%>
   ,"use-drv-pgsql": "<%= @use_drv_pgsql -%>"
 <% end -%>
-<% if not @use_drv_redis.nil? or @use_drv_redis -%>
+<% if not @use_drv_redis.nil? -%>
   ,"use-drv-redis": "<%= @use_drv_redis -%>"
 <% end -%>
 }
